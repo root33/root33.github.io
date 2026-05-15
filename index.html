@@ -21,9 +21,18 @@
         }
 
         /* CUSTOM FIXES: Provides Bootstrap 5 utility rules to your Bootstrap 4 setup */
-        .fs-1 { font-size: 2.5rem !important; }
-        .lh-1 { line-height: 1 !important; }
-        .gap-3 > div { margin-left: 0.75rem; margin-right: 0.75rem; }
+        .fs-1 {
+            font-size: 2.5rem !important;
+        }
+
+        .lh-1 {
+            line-height: 1 !important;
+        }
+
+        .gap-3>div {
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+        }
 
         /* Modern Footer Styling */
         .custom-footer {
@@ -43,16 +52,30 @@
             color: #495057;
             font-size: 1.2rem;
             margin: 0 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
             transition: all 0.3s ease;
             text-decoration: none !important;
         }
 
         /* Interactive Brand Hover Colors */
-        .social-link.fb:hover { background-color: #1877f2; color: #ffffff; transform: translateY(-3px); }
-        .social-link.yt:hover { background-color: #ff0000; color: #ffffff; transform: translateY(-3px); }
-        .social-link.ig:hover { background-color: #e1306c; color: #ffffff; transform: translateY(-3px); }
-        
+        .social-link.fb:hover {
+            background-color: #1877f2;
+            color: #ffffff;
+            transform: translateY(-3px);
+        }
+
+        .social-link.yt:hover {
+            background-color: #ff0000;
+            color: #ffffff;
+            transform: translateY(-3px);
+        }
+
+        .social-link.ig:hover {
+            background-color: #e1306c;
+            color: #ffffff;
+            transform: translateY(-3px);
+        }
+
         .footer-copyright {
             font-size: 0.85rem;
             color: #6c757d;
@@ -62,52 +85,59 @@
 </head>
 
 <body style="background-color: #EECDB6;">
-<main role="main">
-    <section class="jumbotron text-dark" style="background-color: #EECDB6;" >
-        <div class="container" >
-            <div class="row justify-content-center align-items-center">
-                <!-- <div class="col"> -->
+    <main role="main">
+        <section class="jumbotron text-dark" style="background-color: #EECDB6;">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <!-- <div class="col"> -->
                     <!-- <h1 class="jumbotron-heading text-center" style="color: blue;">ManaSwini Arts</h1> -->
-                     <div>
+                    <div>
                         <img src="images/brand-2.jpg" alt="" class="img-fluid mx-auto d-block" style="height: 200px;">
                     </div>
-                <!-- </div> -->
+                    <!-- </div> -->
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center">
+            <h5 class="my-3">COMING SOON on May 25th, 2026 at 1:00 PM EST</h5>
+        </div>
+
+        <!-- Centered Container for Split Units -->
+        <div id="countdown"
+            class="d-flex justify-content-center align-items-center gap-3 text-center text-danger custom-handwriting">
+            <!-- Days -->
+            <div class="d-inline-block mx-2">
+                <div id="days-val" class="display-3 fw-bold lh-1">00</div>
+                <small class="text-muted text-uppercase fw-normal d-block tracking-wider"
+                    style="font-size: 1.2rem; font-family: sans-serif;">Days</small>
+            </div>
+            <!-- Hours -->
+            <div class="d-inline-block mx-2">
+                <div id="hours-val" class="display-3 fw-bold lh-1">00</div>
+                <small class="text-muted text-uppercase fw-normal d-block tracking-wider"
+                    style="font-size: 1.2rem; font-family: sans-serif;">Hours</small>
+            </div>
+            <!-- Minutes -->
+            <div class="d-inline-block mx-2">
+                <div id="mins-val" class="display-3 fw-bold lh-1">00</div>
+                <small class="text-muted text-uppercase fw-normal d-block tracking-wider"
+                    style="font-size: 1.2rem; font-family: sans-serif;">Minutes</small>
+            </div>
+            <!-- Seconds -->
+            <div class="d-inline-block mx-2">
+                <div id="secs-val" class="display-3 fw-bold lh-1">00</div>
+                <small class="text-muted text-uppercase fw-normal d-block tracking-wider"
+                    style="font-size: 1.2rem; font-family: sans-serif;">Seconds</small>
             </div>
         </div>
-    </section>
 
-    <div class="text-center">
-                        <h5 class="my-3">COMING SOON on May 25th, 2026 at 1:00 PM EST</h5>
-                    </div>
-                    
-                    <!-- Centered Container for Split Units -->
-                    <div id="countdown" class="d-flex justify-content-center align-items-center gap-3 text-center text-danger custom-handwriting">
-                        <!-- Days -->
-                        <div class="d-inline-block mx-2">
-                            <div id="days-val" class="fs-1 fw-bold lh-1">00</div>
-                            <small class="text-muted text-uppercase fw-normal d-block tracking-wider" style="font-size: 0.75rem; font-family: sans-serif;">Days</small>
-                        </div>
-                        <!-- Hours -->
-                        <div class="d-inline-block mx-2">
-                            <div id="hours-val" class="fs-1 fw-bold lh-1">00</div>
-                            <small class="text-muted text-uppercase fw-normal d-block tracking-wider" style="font-size: 0.75rem; font-family: sans-serif;">Hours</small>
-                        </div>
-                        <!-- Minutes -->
-                        <div class="d-inline-block mx-2">
-                            <div id="mins-val" class="fs-1 fw-bold lh-1">00</div>
-                            <small class="text-muted text-uppercase fw-normal d-block tracking-wider" style="font-size: 0.75rem; font-family: sans-serif;">Minutes</small>
-                        </div>
-                        <!-- Seconds -->
-                        <div class="d-inline-block mx-2">
-                            <div id="secs-val" class="fs-1 fw-bold lh-1">00</div>
-                            <small class="text-muted text-uppercase fw-normal d-block tracking-wider" style="font-size: 0.75rem; font-family: sans-serif;">Seconds</small>
-                        </div>
-                    </div>
+        <p style="margin-bottom: 20px;"></p>
 
-    <div>
-        <img src="images/flyer.jpg" alt="" class="img-fluid mx-auto d-block">
-    </div>
-</main>
+        <div>
+            <img src="images/flyer.jpg" alt="" class="img-fluid mx-auto d-block">
+        </div>
+    </main>
 
     <footer class="custom-footer mt-5">
         <div class="container text-center">
@@ -123,9 +153,11 @@
                     <i class="fab fa-instagram"></i>
                 </a>
             </div>
-            
+
             <!-- Dynamic Copyright Text -->
-            <p class="footer-copyright mb-0">&copy; <script>document.write(new Date().getFullYear())</script> ManaSwini Arts. All rights reserved.</p>
+            <p class="footer-copyright mb-0">&copy;
+                <script>document.write(new Date().getFullYear())</script> ManaSwini Arts. All rights reserved.
+            </p>
         </div>
     </footer>
 
@@ -143,7 +175,7 @@
 
             // If the countdown is finished, display a message
             if (difference < 0) {
-                document.getElementById("countdown").innerHTML = "<h3>EVENT STARTED</h3>";
+                document.getElementById("countdown").innerHTML = "<h3>WE ARE OPEN !!</h3>";
                 clearInterval(timerInterval);
                 return;
             }
@@ -169,5 +201,5 @@
     </script>
 
 </body>
-</html>
 
+</html>
